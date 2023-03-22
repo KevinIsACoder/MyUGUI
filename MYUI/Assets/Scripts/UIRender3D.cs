@@ -57,7 +57,7 @@ public class UIRender3D : UIBehaviour
             new UIVertex(){ position = verticles[3], color = new Color(1,1,1,1), uv0 = new Vector2(1, 0)},
         };
 
-        SetCenter(vtxes);
+        SetCenter(verticles);
         List<int> indices = new List<int>()  //这个是对上面顶点数组的索引
         {
             0, 1, 2,
@@ -66,18 +66,19 @@ public class UIRender3D : UIBehaviour
         VertexHelper vh = new VertexHelper();
         vh.AddUIVertexStream(vtxes, indices);
         vh.FillMesh(ms);
+        ms.RecalculateBounds();
         return ms;
     }
 
-    void SetCenter(List<UIVertex> verticles)
+    void SetCenter(Vector3[] verticles)
     {
         if(verticles == null) return;
         Vector3 center = new Vector3(50, 50, 50);
         Vector3 pos;
-        for (int i = 0, count = verticles.Count; i < count; i++)
+        for (int i = 0, count = verticles.Length; i < count; i++)
         {
-            pos = verticles[i].position - center;
-            verticles[i].position = pos;
+            pos = verticles[i] - center;
+            verticles[i] = pos;
         }
     }
     
