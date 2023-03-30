@@ -45,6 +45,8 @@
      <Compile Include="Assets\Scripts\GraphicTest.cs" />
      <Compile Include="Assets\Scripts\IEnuratorTest.cs" />
      <Compile Include="Assets\Scripts\CustomImage.cs" />
+     <Compile Include="Assets\MaskShader\ParticleMask.cs" />
+     <Compile Include="Assets\MaskShader\MaskDontClearBuffer.cs" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Particle MultiplyDouble.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Particle Anim Alpha Blend.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Skybox-Cubed.shader" />
@@ -87,9 +89,11 @@
      <None Include="Assets\Shader\CGIncludes\UnityStandardParticleInstancing.cginc" />
      <None Include="Assets\Shader\DefaultResourcesExtra\VR\Shaders\BlitTexArraySliceToDepth.shader" />
      <None Include="Assets\Shader\CGIncludes\UnityUIE.cginc" />
+     <None Include="Assets\MaskShader\MaskShader.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesRendertex.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-Lightmap-Unlit.shader" />
      <None Include="Assets\Shader\DefaultResources\PerformanceTools\FrameDebuggerRenderTargetDisplay.shader" />
+     <None Include="Assets\MaskShader\ParticleMaskShader.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Normal-Diffuse.shader" />
      <None Include="Assets\Shader\CGIncludes\UnityStandardCoreForward.cginc" />
      <None Include="Assets\Shader\DefaultResourcesExtra\UI\UI-Unlit-Transparent.shader" />
@@ -180,6 +184,7 @@
      <None Include="Assets\Shader\CGIncludes\EditorUIE.cginc" />
      <None Include="Assets\Shader\CGIncludes\UnityDeprecated.cginc" />
      <None Include="Assets\Shader\DefaultResources\Internal-Skinning.compute" />
+     <None Include="Assets\MaskShader\ParticleShader.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\TerrainShaders\Splats\DiffuseBaseGen.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Unlit\Unlit-Alpha.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-VertexLit-OnlyDirectionalLights.shader" />
