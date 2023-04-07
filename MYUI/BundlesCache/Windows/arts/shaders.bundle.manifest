@@ -1,0 +1,17 @@
+ManifestFileVersion: 0
+CRC: 4143517744
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7381462efd627f7ecd9c21082272e487
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 68c985bf88fecc38b460cdb825182138
+HashAppended: 0
+ClassTypes:
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/xasset/Samples/Shaders/SimpleGrabPassBlur.shader
+Dependencies: []

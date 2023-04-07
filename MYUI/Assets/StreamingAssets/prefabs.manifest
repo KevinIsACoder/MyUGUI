@@ -1,0 +1,33 @@
+ManifestFileVersion: 0
+CRC: 74074099
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 74d28c00c1672da98c6a70e1050d3bc0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 98f10929cdac7bf178c2c8348468bcf7
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/GameAssets/Prefabs/Cube.prefab
+- Assets/GameAssets/Prefabs/Sphere.prefab
+Dependencies:
+- D:/MYUGUI/MYUI/Assets/StreamingAssets/materials

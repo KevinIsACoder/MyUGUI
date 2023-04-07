@@ -36,17 +36,24 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\AbBuilderTools\ABUtility.cs" />
      <Compile Include="Assets\Scripts\HoleMask.cs" />
      <Compile Include="Assets\Scripts\Button\MyButton.cs" />
      <Compile Include="Assets\Scripts\UIRender3D.cs" />
+     <Compile Include="Assets\MaskShader\ParticleMask.cs" />
+     <Compile Include="Assets\AssetBundleManager\AbAssetManifest.cs" />
+     <Compile Include="Assets\AssetBundleManager\AssetBundleManager.cs" />
+     <Compile Include="Assets\MaskShader\MaskDontClearBuffer.cs" />
      <Compile Include="Assets\Scripts\MaskTest.cs" />
      <Compile Include="Assets\Scripts\MeshTest.cs" />
      <Compile Include="Assets\Scripts\Button\RayCastTest.cs" />
+     <Compile Include="Assets\AssetBundleManager\AbWebRequest.cs" />
      <Compile Include="Assets\Scripts\GraphicTest.cs" />
      <Compile Include="Assets\Scripts\IEnuratorTest.cs" />
+     <Compile Include="Assets\TestAbLoad.cs" />
      <Compile Include="Assets\Scripts\CustomImage.cs" />
-     <Compile Include="Assets\MaskShader\ParticleMask.cs" />
-     <Compile Include="Assets\MaskShader\MaskDontClearBuffer.cs" />
+     <Compile Include="Assets\AssetBundleManager\AbAssetRequest.cs" />
+     <Compile Include="Assets\AssetBundleManager\AbBundleManifest.cs" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Particle MultiplyDouble.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Particle Anim Alpha Blend.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Skybox-Cubed.shader" />
@@ -153,6 +160,7 @@
      <None Include="Assets\Shader\CGIncludes\UnityInstancing.cginc" />
      <None Include="Assets\Shader\DefaultResourcesExtra\AlphaTest-BumpSpec.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\UI\UI-DefaultFont.shader" />
+     <None Include="Assets\xasset\Samples\Shaders\SimpleGrabPassBlur.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Standard.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\Nature\TreeCreator\TreeCreatorLeavesFastOptimized.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\UIElements\Internal-UIRAtlasBlitCopy.shader" />
@@ -180,6 +188,7 @@
      <None Include="Assets\Shader\DefaultResourcesExtra\Internal-CubemapToEquirect.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\TerrainShaders\Splats\Specular-Base.shader" />
      <None Include="Assets\Shader\DefaultResourcesExtra\VideoDecodeAndroid.shader" />
+     <None Include="Assets\xasset\Samples\Shaders\ComputeShader.compute" />
      <None Include="Assets\Shader\CGIncludes\UnityStandardInput.cginc" />
      <None Include="Assets\Shader\CGIncludes\EditorUIE.cginc" />
      <None Include="Assets\Shader\CGIncludes\UnityDeprecated.cginc" />
@@ -886,6 +895,9 @@
     <Reference Include="System.Xml.Serialization">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.27f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.AssetBundleBrowser.Editor">
+        <HintPath>D:\MYUGUI\MYUI\Library\ScriptAssemblies\Unity.AssetBundleBrowser.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
         <HintPath>D:\MYUGUI\MYUI\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
@@ -918,6 +930,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="xasset.editor.csproj">
+      <Project>{b395f4aa-7136-1391-70db-4ce64ae478aa}</Project>
+      <Name>xasset.editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="xasset.csproj">
+      <Project>{92fa3a3c-375d-cfa2-813d-2853567efc43}</Project>
+      <Name>xasset</Name>
+    </ProjectReference>
+    <ProjectReference Include="xasset.samples.csproj">
+      <Project>{b4ddf987-f2a8-b908-8cd3-1de9eba9fe5c}</Project>
+      <Name>xasset.samples</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

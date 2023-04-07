@@ -20,17 +20,26 @@ public class UIRender3D : UIBehaviour
     private Comparison<TestData> compareFunc = CompareData;
     void Start()
     {
-        List<TestData> arry = new List<TestData>(2)
-        {
-            new TestData(2), 
-            new TestData(1)
-        };
-        arry.Sort(compareFunc);
-        Debug.Log(arry[0].a);
-        Debug.Log(arry[1].a);
+        // List<TestData> arry = new List<TestData>(2)
+        // {
+        //     new TestData(2), 
+        //     new TestData(1)
+        // };
+        // arry.Sort(compareFunc);
+        // Debug.Log(arry[0].a);
+        // Debug.Log(arry[1].a);
 
-        var ms = CreateMesh();
-        SetMesh(ms);
+        // var ms = CreateMesh();
+        // SetMesh(ms);
+
+        var dir = "Assets/Prefabs/Tests/a.prefab";
+        var pos = 0;
+        while ((pos = dir.LastIndexOf("/")) != -1)
+        {
+            dir = dir.Substring(0, pos);
+            Debug.Log(dir);
+        }
+        Debug.Log(dir);
     }
     
     public static int CompareData(TestData x, TestData y)

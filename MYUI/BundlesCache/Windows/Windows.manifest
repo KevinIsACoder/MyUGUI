@@ -1,0 +1,47 @@
+ManifestFileVersion: 0
+CRC: 1964067803
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: arts/prefabs.bundle
+      Dependencies:
+        Dependency_0: arts/shaders.bundle
+        Dependency_1: arts/textures.bundle
+    Info_1:
+      Name: arts/scenes_additive_unity.bundle
+      Dependencies:
+        Dependency_0: arts/textures.bundle
+    Info_2:
+      Name: arts/scenes_checkforupdates_unity.bundle
+      Dependencies:
+        Dependency_0: arts/textures.bundle
+    Info_3:
+      Name: arts/scenes_download_unity.bundle
+      Dependencies:
+        Dependency_0: arts/textures.bundle
+    Info_4:
+      Name: arts/scenes_loadadditivescene_unity.bundle
+      Dependencies:
+        Dependency_0: arts/textures.bundle
+    Info_5:
+      Name: arts/scenes_loadasset_unity.bundle
+      Dependencies:
+        Dependency_0: arts/textures.bundle
+    Info_6:
+      Name: arts/scenes_menu_unity.bundle
+      Dependencies:
+        Dependency_0: arts/textures.bundle
+    Info_7:
+      Name: arts/scenes_openingdialog_unity.bundle
+      Dependencies:
+        Dependency_0: arts/textures.bundle
+    Info_8:
+      Name: arts/scenes_splash_unity.bundle
+      Dependencies:
+        Dependency_0: arts/textures.bundle
+    Info_9:
+      Name: arts/shaders.bundle
+      Dependencies: {}
+    Info_10:
+      Name: arts/textures.bundle
+      Dependencies: {}
